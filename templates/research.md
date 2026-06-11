@@ -18,7 +18,7 @@ change.
 - In: `<sub-questions to cover>`
 - Out: `<explicitly not investigated>`
 
-**Environment:** `<where the deliverable lands: file path / doc / chat reply>`
+**Environment (output destination):** `<no runtime env for research — record where the deliverable lands: file path / doc / chat reply>`
 
 **Acceptance (EARS):**
 - WHEN the report is delivered THE SYSTEM SHALL `<answer each in-scope sub-question, with cited sources>`

@@ -22,7 +22,7 @@ Use for: environment, configuration, infrastructure, or deployment changes.
 
 **Acceptance (EARS):**
 - WHEN `<the change is applied>` THE SYSTEM SHALL `<observable healthy state, e.g. pod 1/1 Running, endpoint returns 200>`
-- IF `<the change misbehaves>`, THEN THE SYSTEM SHALL `<be revertible via the documented rollback path>`
+- IF `<the change misbehaves>`, THEN THE SYSTEM SHALL `<restore the previous state via a concrete action, e.g. re-applying the saved pre-change manifest>`
 
 **No-go:** `<resources / namespaces / secrets that must not be touched>`
 

@@ -5,6 +5,7 @@ Use for: fixing incorrect behavior.
 ## Must-clarify (ask, or state as an Assumption)
 
 - Reproduction: exact steps / input that shows the bug today.
+- Which branch / version shows the bug? Is it present on main?
 - Expected vs actual behavior.
 - Root-cause fix wanted, or a contained workaround acceptable?
 - Regression safety: what nearby behavior must stay intact?

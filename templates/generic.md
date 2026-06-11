@@ -1,6 +1,6 @@
 # Template: generic
 
-Use when no other template fits. Bare six-field card.
+Use for: any hands-on task no other template fits. Bare six-field card.
 
 ## Must-clarify (ask, or state as an Assumption)
 

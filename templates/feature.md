@@ -21,7 +21,7 @@ Use for: adding new functionality to an existing system.
 
 **Acceptance (EARS):**
 - WHEN `<user action>` THE SYSTEM SHALL `<new observable behavior>`
-- WHEN `<an existing flow not related to the feature runs>` THE SYSTEM SHALL `<behave as before>`
+- WHEN `<an existing flow not related to the feature runs>` THE SYSTEM SHALL `<return the same response / exit code / output as before the change>`
 
 **No-go:** `<APIs/schemas not to break, files not to touch>`
 

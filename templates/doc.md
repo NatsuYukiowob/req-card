@@ -24,6 +24,6 @@ Use for: writing or updating documentation.
 - WHEN a target reader reads the doc THE SYSTEM SHALL `<enable them to do/understand X without other sources>`
 - WHEN claims in the doc are checked against `<source of truth>` THE SYSTEM SHALL `<match it>`
 
-**No-go:** `<docs not to modify; secrets/internal info not to include>`
+**No-go:** `<docs not to modify; sensitive content (secrets, PII, internal URLs) not to expose>`
 
 **Assumptions:** `<inferred audience, tier, structure>`
