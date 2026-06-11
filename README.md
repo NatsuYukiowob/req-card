@@ -45,6 +45,10 @@ Same-named templates override by layer: **project > personal > built-in**.
 | Personal | `~/.claude/req-card/templates/` | your machine only |
 | Built-in | `templates/` here | this repo |
 
+Personal data lives in `~/.claude/req-card/` — deliberately OUTSIDE this
+skill's directory, so `git pull` upgrades never touch your templates or
+archive.
+
 Approved cards are archived to `~/.claude/req-card/archive/`. When the same
 request pattern keeps showing up, the skill proposes turning it into a new
 template.

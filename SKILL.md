@@ -1,6 +1,6 @@
 ---
 name: req-card
-description: Use when the user requests any hands-on task — changing code, configs, infrastructure or deployments, or creating files/documents. Turns the casual request into an explicit requirement card (goal / scope / environment / acceptance / no-go / assumptions) that the user confirms BEFORE any work starts. Do NOT use for pure questions, status checks, or open discussion.
+description: Use when the user requests any hands-on task — changing code, configs, infrastructure or deployments, running state-changing commands or operations, or creating files/documents. Turns the casual request into an explicit requirement card (goal / scope / environment / acceptance / no-go / assumptions) that the user confirms BEFORE any work starts. Do NOT use for pure questions, status checks, or open discussion.
 ---
 
 # req-card — Requirement Card Intake
@@ -14,7 +14,8 @@ silently make gets written down and shown to the user to veto.
 1. **Language.** ALWAYS interact and write the card in the user's language.
    These skill files are English; your output follows the user.
 2. **No work before confirmation.** Do not edit, run, or create anything for
-   the task until the user approves the card.
+   the task until the user approves the card. Read-only exploration (reading
+   files, docs, logs, git history) is allowed and encouraged.
 3. **Assumptions is never empty.** If you truly assumed nothing, write
    "none — all fields user-stated".
 
@@ -53,7 +54,8 @@ When in doubt → L.
 2. Confirm with ONE question (use AskUserQuestion if available, plain text
    otherwise), options exactly:
    - **Proceed as carded**
-   - **Edit a field** (apply the correction, re-confirm once)
+   - **Edit a field** (apply the correction, then re-confirm; repeat until
+     approved or cancelled)
    - **Upgrade to full interview** (switch to Step 4-L)
    - **Cancel** (stop; do not archive)
 3. On approval: archive the card (Step 6), then execute the task following
@@ -67,7 +69,9 @@ When in doubt → L.
 2. **Interview** following `references/questioning.md`: one question per
    message, multiple-choice preferred, only non-obvious questions, hard cap
    7. Stop as soon as every card field is solid.
-3. Produce the full card; confirm exactly like Step 4-S item 2.
+3. Produce the full card; confirm like Step 4-S item 2, but replace the
+   "Upgrade to full interview" option with **Resume interview** (ask more
+   questions, still within the 7-question cap).
 4. On approval: archive (Step 6). If the task is creative work (new
    feature / component / architecture) and a brainstorming or design skill
    is available, hand the approved card to it as its input — the card
@@ -88,10 +92,14 @@ When in doubt → L.
 ## Step 6 — Archive & sedimentation
 
 - Save the approved card to `~/.claude/req-card/archive/YYYY-MM-DD-<slug>.md`
-  (create directories if missing). Cancelled cards are NOT saved.
-- When the same request pattern has appeared 2–3 times with no matching
-  template, propose creating one — ask whether it belongs in the personal or
-  the project overlay. Only create it if the user agrees.
+  (create directories if missing). The slug is a short kebab-case ASCII
+  summary of the Goal (even when the card itself is in another language);
+  on a same-day name collision append `-2`, `-3`, …. Cancelled cards are
+  NOT saved.
+- When archiving, glance at the existing archive filenames. If the same
+  request pattern has appeared 2–3 times with no matching template, propose
+  creating one — ask whether it belongs in the personal or the project
+  overlay. Only create it if the user agrees.
 
 ## Edge rules
 
@@ -100,3 +108,5 @@ When in doubt → L.
 - Tier misjudged mid-flow (L turns out trivial) → close the card early and
   say so.
 - No template fits → built-in `generic.md`, never skip the card.
+- Scope grows mid-execution ("also do X while you're at it") → amend the
+  card and re-confirm, or open a new card if it is a different goal.
