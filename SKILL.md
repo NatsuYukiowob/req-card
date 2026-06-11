@@ -11,8 +11,10 @@ silently make gets written down and shown to the user to veto.
 
 ## Hard rules
 
-1. **Language.** ALWAYS interact and write the card in the user's language.
-   These skill files are English; your output follows the user.
+1. **Language.** ALWAYS interact and write the card in the user's language —
+   including the card's field labels (e.g. Goal/Scope become 目標/範圍 for a
+   Traditional-Chinese user). These skill files are English; your output
+   follows the user.
 2. **No work before confirmation.** Do not edit, run, or create anything for
    the task until the user approves the card. Read-only exploration (reading
    files, docs, logs, git history) is allowed and encouraged.
