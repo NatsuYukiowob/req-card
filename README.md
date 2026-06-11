@@ -29,7 +29,7 @@ You veto or approve the card in seconds; only then does work start.
 ## Install
 
 ```bash
-git clone https://github.com/<you>/req-card ~/.claude/skills/req-card
+git clone https://github.com/NatsuYukiowob/req-card ~/.claude/skills/req-card
 ```
 
 That's it. Claude Code picks it up as `req-card`. Invoke manually with
