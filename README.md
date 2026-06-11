@@ -37,7 +37,7 @@ That's it. Claude Code picks it up as `req-card`. Invoke manually with
 
 ## Customize (overlays)
 
-Same-named templates override by layer: **project > personal > built-in**.
+Same-named (or same-purpose) templates override by layer: **project > personal > built-in**.
 
 | Layer | Path | Lives in |
 |-------|------|----------|
