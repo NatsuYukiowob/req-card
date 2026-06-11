@@ -15,8 +15,9 @@ fill a form. Borrowed from interview-me-style "senior architect" interviews.
 4. **Ask questions that change what you would build:** scope cuts,
    contradictions between stated wishes, edge cases with real cost,
    irreversible or expensive-to-reverse choices.
-5. **Hard cap: 7 questions.** Stop earlier the moment every card field is
-   solid.
+5. **Hard cap: 7 questions.** Each question-message counts as one toward the
+   cap (multiple-choice options within it do not count separately). Stop
+   earlier the moment every card field is solid.
 6. **Cap hit with major unknowns left?** Stop anyway. Write the unknowns
    into Assumptions as explicit risks and let the user decide at the
    confirmation gate.

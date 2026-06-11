@@ -4,7 +4,8 @@ EARS (Easy Approach to Requirements Syntax) forces every acceptance
 criterion into an unambiguous, testable sentence. Use it for the card's
 **Acceptance** field. Write criteria in the user's language; keep the
 structural keywords (WHEN / WHILE / IF...THEN / WHERE / SHALL) — translating
-them is fine as long as the structure stays.
+them is fine as long as the structure stays and SHALL keeps its
+mandatory-obligation force (do not soften it to "should").
 
 ## Patterns
 
@@ -21,7 +22,8 @@ them is fine as long as the structure stays.
 - `<behavior>` must be **observable**: a command output, an HTTP status, a
   file existing, a pod state — something a third party could check.
 - One criterion = one behavior. Split compound sentences.
-- An S-tier card needs 1–3 criteria. More only if genuinely needed.
+- An S-tier (small, clearly-bounded task) card needs 1–3 criteria. More only
+  if genuinely needed.
 
 ## Examples
 
