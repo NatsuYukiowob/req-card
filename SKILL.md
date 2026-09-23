@@ -1,6 +1,6 @@
 ---
 name: req-card
-description: Use when the user requests any hands-on task — changing code, configs, infrastructure or deployments, running state-changing commands or operations, or creating files/documents. Turns the casual request into an explicit requirement card (goal / scope / environment / acceptance / no-go / assumptions) that the user confirms BEFORE any work starts. Do NOT use for pure questions, status checks, or open discussion.
+description: Use when the user requests a hands-on task that is high-stakes or ambiguous — touching production/customer/company systems, crossing multiple systems or repos, destructive or hard-to-reverse operations, or a request whose goal or acceptance criteria are unclear. Turns the casual request into an explicit requirement card (goal / scope / environment / acceptance / no-go / assumptions) that the user confirms BEFORE any work starts. Do NOT use for routine single-repo code edits, small config changes, pure questions, status checks, or open discussion — just do those.
 ---
 
 # req-card — Requirement Card Intake
@@ -23,9 +23,12 @@ silently make gets written down and shown to the user to veto.
 
 ## Step 1 — Should this run?
 
-Run for any hands-on task (something will be changed or created). Skip for
-pure Q&A, status checks, or discussion — answer those normally. The user can
-also invoke this skill manually at any time.
+Run when a hands-on task is high-stakes or ambiguous: it touches production,
+customer or company systems; spans multiple systems or repos; is destructive
+or hard to reverse; or its goal / finish line is unclear. Skip for routine
+edits in a single repo, small config changes, pure Q&A, status checks, or
+discussion — do those directly. The user can also invoke this skill manually
+at any time.
 
 ## Step 2 — Resolve templates (overlay order)
 

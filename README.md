@@ -33,7 +33,7 @@ git clone https://github.com/NatsuYukiowob/req-card ~/.claude/skills/req-card
 ```
 
 That's it. Claude Code picks it up as `req-card`. Invoke manually with
-`/req-card <request>` or let it trigger automatically on hands-on tasks.
+`/req-card <request>` or let it trigger automatically on high-stakes or ambiguous hands-on tasks.
 
 ## Customize (overlays)
 
